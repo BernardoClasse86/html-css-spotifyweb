@@ -25,7 +25,8 @@ menu {
 }
 
 :root {
-    /* colors */
+    --player-grey: #282828;
+    --empty-line: #5A5A5A;
 }
 
 /************* MAIN SECTION  ************/
@@ -42,6 +43,7 @@ menu {
 
 .col-play-bar {
     flex-shrink: 0;
+    background-color: var(--player-grey);
 }
 
 /********* MAIN-AREA  ********/
@@ -67,7 +69,7 @@ menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 236px;
+    padding: 18px 8px;
 }
 
 .player-col-static {
@@ -75,7 +77,7 @@ menu {
 }
 
 .player-col-elastic {
-    flex-grow: 1;
+    flex-basis: 532px;
 }
 
 .main-player-row {
@@ -94,6 +96,120 @@ menu {
     text-align: center;
 }
 
+.player-song-row {
+    display: flex;
+    align-items: center;
+}
+
+.song-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.song-col {
+    flex-basis: 100%;
+}
+
+.song-col.singer {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.song-col.song-name {
+    color: grey;
+    font-size: 12px;
+}
+
+.favourite-row {
+    display: flex;
+    gap: 12px;
+}
+
+.favourite-col {
+    flex-basis: 50%;
+    color: grey;
+}
+
+.song-thumb {
+    max-width: 46px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.song {
+    margin-left: 10px;
+    margin-right: 18px;
+}
+
+.favourite {
+    /* padding: 0 8px; */
+}
+
+.player-buttons-row {
+    display: flex;
+    gap: 20px;
+    color: white;
+    justify-content: center;
+}
+
+.player-time-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.play-button {
+    font-size: 32px;
+}
+
+.player-full-time {
+    width: 434px;
+    background-color: var(--empty-line);
+    border: 0px solid transparent;
+    border-radius: 999px;
+}
+
+.player-actual-time {
+    height: 4px;
+    width: 20%;
+    background-color: #9e9e9e;
+    border-radius: 999px;
+}
+
+.time-item {
+    font-size: 10px;
+    color: white;
+}
+
+.features-row {
+    display: flex;
+    padding-right: 10px;
+    gap: 16px;
+    align-items: center;
+}
+
+.features-col {
+    color: white;
+}
+
+.features-col-line {
+    width: 122px;
+    background-color: var(--empty-line);
+    border: 0px solid transparent;
+    border-radius: 999px;
+}
+
+.full-line {
+    height: 4px;
+    width: 20%;
+    background-color: #9e9e9e;
+    border-radius: 999px;
+}
+
+
 
 /********* PLAYER  ********/
 
@@ -105,17 +221,7 @@ menu {
 
 @media screen and (max-width: 878px) {
 
-    .player-col-static {
-        min-width: 216px;
-    }
 
-    .player-col-elastic {
-        flex-basis: 330px;
-    }
-
-    .player-row {
-        gap: 56px;
-    }
 
 }
 
@@ -125,17 +231,7 @@ menu {
 
 @media screen and (max-width: 639px) {
 
-    .player-col-static {
-        min-width: 162px;
-    }
 
-    .player-col-elastic {
-        flex-basis: 216px;
-    }
-
-    .player-row {
-        gap: 46px;
-    }
 
 }
 
@@ -145,21 +241,8 @@ menu {
 
 @media screen and (max-width: 552px) {
 
-    .col-sidebar {
-        flex-basis: 56px;
-    }
 
-    .player-col-static {
-        min-width: 162px;
-    }
 
-    .player-col-elastic {
-        flex-basis: 200px;
-    }
-
-    .player-row {
-        gap: 44px;
-    }
 }
 
 /*** /Mediaquery Mobile ***/
@@ -168,7 +251,7 @@ menu {
 
 /************* DEBUG RULES  ************/
 .debug .container-row {
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
 }
 
 .debug .col {
@@ -177,8 +260,7 @@ menu {
 }
 
 .debug .col-play-bar {
-    background-color: aqua;
-    border: 4px solid green;
+    /* border: 4px solid green; */
 }
 
 .debug .col-sidebar {
@@ -190,11 +272,11 @@ menu {
     border: 2px dotted blue;
 }
 
-.debug .player-col-static {
+/* .debug .player-col-static {
     border: 2px solid black;
 }
 
 .debug .player-col-elastic {
     border: 2px solid yellow;
-}
+} */
 /************* /DEBUG RULES  ************/
