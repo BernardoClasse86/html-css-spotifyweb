@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font */
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+ul,
+ol,
+li,
+menu {
+    list-style-type: none;
+}
+
+:root {
+    /* colors */
+}
+
+/************* MAIN SECTION  ************/
+
+.container-row {
+    display: flex;
+    flex-direction: column;
+    height: 100vh
+}
+
+.col {
+    flex-grow: 1;
+}
+
+.col-play-bar {
+    flex-shrink: 0;
+}
+
+/********* MAIN-AREA  ********/
+
+.row-main-area {
+    display: flex;
+}
+
+.col-sidebar {
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+
+.col-music {
+    flex-grow: 1;
+}
+
+/********* /MAIN-AREA  ********/
+
+/********* PLAYER  ********/
+
+.player-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 236px;
+}
+
+.player-col-static {
+    min-width: 220px;
+}
+
+.player-col-elastic {
+    flex-grow: 1;
+}
+
+.main-player-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.player-buttons {
+    flex-basis: 200px;
+    text-align: center;
+}
+
+.player-time {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+
+/********* PLAYER  ********/
+
+/************* /MAIN SECTION  ************/
+
+/************* Mediaquery  ************/
+
+/*** Mediaquery iPad ***/
+
+@media screen and (max-width: 878px) {
+
+    .player-col-static {
+        min-width: 216px;
+    }
+
+    .player-col-elastic {
+        flex-basis: 330px;
+    }
+
+    .player-row {
+        gap: 56px;
+    }
+
+}
+
+/*** Mediaquery /iPad ***/
+
+/*** Mediaquery iPad-mini ***/
+
+@media screen and (max-width: 639px) {
+
+    .player-col-static {
+        min-width: 162px;
+    }
+
+    .player-col-elastic {
+        flex-basis: 216px;
+    }
+
+    .player-row {
+        gap: 46px;
+    }
+
+}
+
+/*** Mediaquery /iPad-mini***/
+
+/*** Mediaquery Mobile ***/
+
+@media screen and (max-width: 552px) {
+
+    .col-sidebar {
+        flex-basis: 56px;
+    }
+
+    .player-col-static {
+        min-width: 162px;
+    }
+
+    .player-col-elastic {
+        flex-basis: 200px;
+    }
+
+    .player-row {
+        gap: 44px;
+    }
+}
+
+/*** /Mediaquery Mobile ***/
+
+/************* /Mediaquery  ************/
+
+/************* DEBUG RULES  ************/
+.debug .container-row {
+    border: 5px solid blue;
+}
+
+.debug .col {
+    background-color: grey;
+    border: 4px solid red;
+}
+
+.debug .col-play-bar {
+    background-color: aqua;
+    border: 4px solid green;
+}
+
+.debug .col-sidebar {
+    background-color: orange;
+    border: 2px dotted black;
+}
+
+.debug .col-music {
+    border: 2px dotted blue;
+}
+
+.debug .player-col-static {
+    border: 2px solid black;
+}
+
+.debug .player-col-elastic {
+    border: 2px solid yellow;
+}
+/************* /DEBUG RULES  ************/
