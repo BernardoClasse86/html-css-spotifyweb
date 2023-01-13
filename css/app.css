@@ -83,6 +83,10 @@ button {
     width: 140px;
 }
 
+.logo-webapp {
+    width: 140px;
+}
+
 .logo-mobile {
     display: none;
 }
@@ -175,7 +179,7 @@ button {
 }
 
 .user-profile-icon {
-    width: 30px;
+    width: 26px;
     background-color: var(--bg-icon);
     border-radius: 999px;
     aspect-ratio: 1;
@@ -183,6 +187,7 @@ button {
 
 .user-profile-name {
     font-weight: bold;
+    font-size: 14px;
 }
 
 .content {
@@ -440,6 +445,48 @@ button {
     .sidebar {
         flex-basis: 50px;
         flex-shrink: 0;
+    }
+
+    .sidebar.side-style {
+        padding: 4px 10px 8px;
+        align-items: center;
+    }
+
+    .logo-webapp {
+        display: none;
+    }
+
+    .logo-mobile {
+        display: block;
+        width: 32px;
+    }
+
+    .nav-icons {
+        margin-right: 0;
+        width: 24px;
+    }
+
+    .nav-item-text {
+        display: none;
+    }
+
+    .sidebar-item.playlist-item {
+        display: none;
+    }
+
+    .app-download-text {
+        display: none;
+    }
+
+    .sidebar-item.after-line::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+    }
+
+    .user-profile-name {
+        display: none;
     }
 
     .player-col-static-first {
