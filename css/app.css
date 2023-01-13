@@ -27,6 +27,7 @@ menu {
 :root {
     --player-grey: #282828;
     --empty-line: #5A5A5A;
+    --grey-text: #878787;
 }
 
 button {
@@ -88,24 +89,9 @@ button {
     margin-left: 52px;
 }
 
-.main-player-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+/**** PLAYER ITEMS ****/
 
-.player-buttons {
-    margin-bottom: 8px;
-}
-
-.player-time {
-    flex-basis: 100%;
-}
-
-.player-song-row {
-    display: flex;
-    align-items: center;
-}
+/* SONG */
 
 .song-row {
     display: flex;
@@ -125,7 +111,7 @@ button {
 }
 
 .song-col.song-name {
-    color: grey;
+    color: var(--grey-text);
     font-size: 10px;
 }
 
@@ -140,7 +126,7 @@ button {
 
 .button-no-bg {
     background-color: var(--player-grey);
-    color: grey;
+    color: var(--grey-text);
 }
 
 .song-thumb {
@@ -152,6 +138,27 @@ button {
 
 .song {
     margin-left: 10px;
+}
+
+/* PLAYER-BAR */
+
+.main-player-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.player-buttons {
+    margin-bottom: 8px;
+}
+
+.player-time {
+    flex-basis: 100%;
+}
+
+.player-song-row {
+    display: flex;
+    align-items: center;
 }
 
 .player-buttons-row {
@@ -202,6 +209,8 @@ button {
     color: white;
 }
 
+/* FEATURES BAR */
+
 .features-row {
     display: flex;
     padding-right: 10px;
@@ -219,26 +228,24 @@ button {
     color: white;
 }
 
-.features-col-4 {
+.features-col-volume {
     width: 122px;
 }
 
-.features-col-line {
+.features-col-volume-bar {
     background-color: var(--empty-line);
     border: 0px solid transparent;
     border-radius: 999px;
 }
 
-.full-line {
+.item-volume {
     height: 4px;
     width: 20%;
     background-color: #9e9e9e;
     border-radius: 999px;
 }
 
-
-
-/********* PLAYER  ********/
+/********* /PLAYER  ********/
 
 /************* /MAIN SECTION  ************/
 
@@ -256,7 +263,7 @@ button {
         margin-left: 20px;
     }
 
-    .features-col-4 {
+    .features-col-volume {
         width: 100px;
     }
 
@@ -290,7 +297,7 @@ button {
         margin-right: 20px;
     }
 
-    .features-col-4 {
+    .features-col-volume {
         width: 90px;
     }
 
@@ -340,18 +347,19 @@ button {
 /************* /Mediaquery  ************/
 
 /************* DEBUG RULES  ************/
-.debug .container-row {
-    /* border: 5px solid blue; */
-}
+
+/* .debug .container-row {
+    border: 5px solid blue;
+} */
 
 .debug .col {
     background-color: grey;
     border: 4px solid red;
 }
 
-.debug .col-play-bar {
-    /* border: 4px solid green; */
-}
+/* .debug .col-play-bar {
+    border: 4px solid green;
+} */
 
 .debug .col-sidebar {
     background-color: orange;
