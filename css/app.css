@@ -117,6 +117,10 @@ button {
     margin-right: 8px;
 }
 
+.nav-item-text {
+    font-size: 12px;
+}
+
 .home-button {
     color: white;
 }
@@ -143,11 +147,18 @@ button {
     margin-right: 8px;
 }
 
+.create-playlist {
+    font-size: 14px;
+    font-weight: bold;
+}
+
 .my-playlist {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    font-size: 12px;
 }
+
 
 .sidebar-item .app-download {
     display: flex;
@@ -172,6 +183,10 @@ button {
 .download-button {
     width: 18px;
     aspect-ratio: 1;
+}
+
+.app-download-text {
+    font-size: 12px;
 }
 
 .user-profile {
