@@ -29,6 +29,10 @@ menu {
     --empty-line: #5A5A5A;
 }
 
+button {
+    border: none;
+}
+
 /************* MAIN SECTION  ************/
 
 .container-row {
@@ -72,12 +76,16 @@ menu {
     padding: 18px 8px;
 }
 
-.player-col-static {
-    min-width: 220px;
+.player-col-static-first {
+    margin-right: 52px;
 }
 
 .player-col-elastic {
-    flex-basis: 532px;
+    flex-basis: 40%;
+}
+
+.player-col-static-third {
+    margin-left: 52px;
 }
 
 .main-player-row {
@@ -87,13 +95,11 @@ menu {
 }
 
 .player-buttons {
-    flex-basis: 200px;
-    text-align: center;
+    margin-bottom: 8px;
 }
 
 .player-time {
     flex-basis: 100%;
-    text-align: center;
 }
 
 .player-song-row {
@@ -104,6 +110,8 @@ menu {
 .song-row {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 26px;
 }
 
 .song-col {
@@ -118,7 +126,7 @@ menu {
 
 .song-col.song-name {
     color: grey;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .favourite-row {
@@ -128,6 +136,10 @@ menu {
 
 .favourite-col {
     flex-basis: 50%;
+}
+
+.button-no-bg {
+    background-color: var(--player-grey);
     color: grey;
 }
 
@@ -140,11 +152,6 @@ menu {
 
 .song {
     margin-left: 10px;
-    margin-right: 18px;
-}
-
-.favourite {
-    /* padding: 0 8px; */
 }
 
 .player-buttons-row {
@@ -152,21 +159,28 @@ menu {
     gap: 20px;
     color: white;
     justify-content: center;
+    align-items: center;
 }
 
 .player-time-row {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 12px;
 }
 
-.play-button {
+.play-buttons {
+    color: white;
+    background-color: var(--player-grey);
+    font-size: 18px;
+}
+
+.play-buttons.button-start {
     font-size: 32px;
 }
 
 .player-full-time {
-    width: 434px;
+    width: 100%;
     background-color: var(--empty-line);
     border: 0px solid transparent;
     border-radius: 999px;
@@ -179,6 +193,10 @@ menu {
     border-radius: 999px;
 }
 
+.col-player-items.bar {
+    width: 100%;
+}
+
 .time-item {
     font-size: 10px;
     color: white;
@@ -189,14 +207,23 @@ menu {
     padding-right: 10px;
     gap: 16px;
     align-items: center;
+    justify-content: flex-end;
+}
+
+.features-buttons {
+    color: white;
+    background-color: var(--player-grey);
 }
 
 .features-col {
     color: white;
 }
 
-.features-col-line {
+.features-col-4 {
     width: 122px;
+}
+
+.features-col-line {
     background-color: var(--empty-line);
     border: 0px solid transparent;
     border-radius: 999px;
@@ -221,7 +248,17 @@ menu {
 
 @media screen and (max-width: 878px) {
 
+    .player-col-static-first {
+        margin-right: 36px;
+    }
 
+    .player-col-static-third {
+        margin-left: 20px;
+    }
+
+    .features-col-4 {
+        width: 100px;
+    }
 
 }
 
@@ -231,8 +268,35 @@ menu {
 
 @media screen and (max-width: 639px) {
 
+    .favourite-col {
+        flex-basis: 100%;
+    }
 
+    .favourite-row {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 0px;
+    }
 
+    .player-col-static-first {
+        margin-right: 34px;
+    }
+
+    .player-col-static-third {
+        margin-left: 10px;
+    }
+
+    .song-row {
+        margin-right: 20px;
+    }
+
+    .features-col-4 {
+        width: 90px;
+    }
+
+    .features-row {
+        gap: 12px;
+    }
 }
 
 /*** Mediaquery /iPad-mini***/
@@ -241,7 +305,33 @@ menu {
 
 @media screen and (max-width: 552px) {
 
+    .player-col-static-first {
+        margin-right: 38px;
+    }
 
+    .features-col-4 {
+        width: 86px;
+    }
+
+    .favourite-row {
+        gap: 0px;
+    }
+
+    .song-row {
+        margin-right: 20px;
+    }
+
+    .song-thumb {
+        max-width: 30px;
+    }
+
+    .song-col.singer {
+        font-size: 12px;
+    }
+
+    .song-col.song-name {
+        font-size: 10px;
+    }
 
 }
 
