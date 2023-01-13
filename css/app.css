@@ -5,7 +5,7 @@
 }
 
 html {
-    /* font */
+    font-family: 'Open Sans', sans-serif;
 }
 
 img {
@@ -25,45 +25,50 @@ menu {
 }
 
 :root {
-    --player-grey: #282828;
+    --bg-player: #282828;
     --empty-line: #5A5A5A;
     --grey-text: #878787;
+    --bg-content: #141922;
+    --bg-sidebar: #000000;
 }
 
 button {
     border: none;
 }
 
+
 /************* MAIN SECTION  ************/
 
 .container-row {
     display: flex;
     flex-direction: column;
-    height: 100vh
+    height: 100vh;
 }
 
-.col {
+.main-area {
     flex-grow: 1;
+    overflow: hidden;
+    display: flex;
 }
 
-.col-play-bar {
+.player-bar {
     flex-shrink: 0;
-    background-color: var(--player-grey);
+    background-color: var(--bg-player);
 }
 
 /********* MAIN-AREA  ********/
 
-.row-main-area {
-    display: flex;
-}
-
-.col-sidebar {
-    flex-basis: 200px;
+.sidebar {
+    flex-basis: 230px;
     flex-shrink: 0;
+    background-color: var(--bg-sidebar);
+    overflow: hidden;
 }
 
-.col-music {
+.content {
     flex-grow: 1;
+    background-color: var(--bg-content);
+    overflow: auto;
 }
 
 /********* /MAIN-AREA  ********/
@@ -125,7 +130,7 @@ button {
 }
 
 .button-no-bg {
-    background-color: var(--player-grey);
+    background-color: var(--bg-player);
     color: var(--grey-text);
 }
 
@@ -140,7 +145,7 @@ button {
     margin-left: 10px;
 }
 
-/* PLAYER-BAR */
+/* INTERACTIONS */
 
 .main-player-row {
     display: flex;
@@ -178,7 +183,7 @@ button {
 
 .play-buttons {
     color: white;
-    background-color: var(--player-grey);
+    background-color: var(--bg-player);
     font-size: 18px;
 }
 
@@ -209,7 +214,7 @@ button {
     color: white;
 }
 
-/* FEATURES BAR */
+/* FEATURES */
 
 .features-row {
     display: flex;
@@ -221,7 +226,7 @@ button {
 
 .features-buttons {
     color: white;
-    background-color: var(--player-grey);
+    background-color: var(--bg-player);
 }
 
 .features-col {
@@ -286,7 +291,7 @@ button {
     }
 
     .player-col-static-first {
-        margin-right: 34px;
+        margin-right: 32px;
     }
 
     .player-col-static-third {
@@ -311,6 +316,11 @@ button {
 /*** Mediaquery Mobile ***/
 
 @media screen and (max-width: 552px) {
+
+    .sidebar {
+        flex-basis: 50px;
+        flex-shrink: 0;
+    }
 
     .player-col-static-first {
         margin-right: 38px;
@@ -352,23 +362,14 @@ button {
     border: 5px solid blue;
 } */
 
-.debug .col {
-    background-color: grey;
-    border: 4px solid red;
-}
-
 /* .debug .col-play-bar {
     border: 4px solid green;
 } */
 
-.debug .col-sidebar {
+/* .debug .col-sidebar {
     background-color: orange;
     border: 2px dotted black;
-}
-
-.debug .col-music {
-    border: 2px dotted blue;
-}
+} */
 
 /* .debug .player-col-static {
     border: 2px solid black;

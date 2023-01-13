@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/app.css">
     <script src="https://kit.fontawesome.com/36a89bf28f.js" crossorigin="anonymous"></script>
 </head>
@@ -16,29 +18,38 @@
 
     <section class="container-row">
 
-        <div class="col main-area">
+        <!---------- /MAIN-AREA ---------->
 
-            <div class="row-main-area">
+        <div class="main-area">
 
-                <div class="col-sidebar">
-                    ciao
-                </div>
+            <!------- SIDE-BAR ------->
 
-                <div class="col-music">
-                    some text 
-                </div>
-
+            <div class="sidebar">
             </div>
+
+            <!------- /SIDE-BAR ------->
+
+            <!------- CONTENT ------->
+
+            <div class="content">
+            </div>
+
+            <!------- /CONTENT ------->
 
         </div>
 
-        <!------------------- PLAYER BAR ------------------->
+        <!---------- /MAIN-AREA ---------->
 
-        <div class="col-play-bar player">
+        <!----------- PLAYER BAR ----------->
+
+        <div class="player-bar">
 
             <div class="player-row">
 
+                <!------- PLAYER-SONG ------->
+
                 <div class="player-col-static-first">
+
 
                     <div class="player-song-row">
 
@@ -89,8 +100,11 @@
 
                     </div>
                     
-
                 </div>
+
+                <!------- /PLAYER-SONG ------->
+
+                <!------- PLAYER-INTERACTIONS ------->
 
                 <div class="player-col-elastic">
 
@@ -150,6 +164,10 @@
 
                 </div>
 
+                <!------- /PLAYER-INTERACTIONS ------->
+
+                <!------- PLAYER-FEATURES ------->
+
                 <div class="player-col-static-third">
 
                     <div class="features-row">
@@ -178,9 +196,13 @@
 
                 </div>
 
+                <!------- /PLAYER-FEATURES ------->
+
             </div>
             
         </div>
+
+        <!----------- /PLAYER BAR ----------->
 
     </section>
 
