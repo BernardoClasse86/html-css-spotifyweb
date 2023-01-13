@@ -30,6 +30,7 @@ menu {
     --grey-text: #878787;
     --bg-content: #141922;
     --bg-sidebar: #000000;
+    --bg-icon: #808080;
 }
 
 button {
@@ -58,11 +59,130 @@ button {
 
 /********* MAIN-AREA  ********/
 
+/* SIDEBAR */
+
 .sidebar {
     flex-basis: 230px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar.side-style {
     background-color: var(--bg-sidebar);
     overflow: hidden;
+    padding: 8px 20px 8px;
+}
+
+.top-space {
+    padding-top: 12px;
+}
+
+.sidebar-item.logo {
+    width: 140px;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.sidebar-item {
+    color: var(--grey-text);
+    display: contents;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item > p {
+    font-weight: bold;
+}
+
+.nav-icons {
+    width: 20px;
+    aspect-ratio: 1;
+    margin-right: 8px;
+}
+
+.home-button {
+    color: white;
+}
+
+.playlists {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.playlists-article {
+    color: white;
+    text-transform: uppercase;
+}
+
+.new-playlist {
+    display: flex;
+    align-items: center;
+}
+
+.add-playlist {
+    font-size: 20px;
+    padding: 8px 12px;
+    margin-right: 8px;
+}
+
+.my-playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.sidebar-item .app-download {
+    display: flex;
+    margin-top: auto;
+    gap: 10px;
+}
+
+.sidebar-item.after-line::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 192px;
+    background-color: var(--grey-text);
+}
+
+.sidebar-item .user-profile {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.download-button {
+    width: 18px;
+    aspect-ratio: 1;
+}
+
+.user-profile {
+    color: white;
+}
+
+.user-profile-icon {
+    width: 30px;
+    background-color: var(--bg-icon);
+    border-radius: 999px;
+    aspect-ratio: 1;
+}
+
+.user-profile-name {
+    font-weight: bold;
 }
 
 .content {
