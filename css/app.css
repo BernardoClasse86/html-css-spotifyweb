@@ -271,7 +271,7 @@ button {
 
 .content-col {
     flex-basis: 100%;
-    padding: 20px 0;
+    margin-bottom: 36px;
 }
 
 /* CONTENT NAV */
@@ -300,11 +300,11 @@ button {
 
 /* /CONTENT NAV */
 
-.songs-article {
-    padding-bottom: 24px;
+.content-articles {
+    margin-bottom: 24px;
 }
 
-.songs-article-title {
+.content-article-title {
     font-size: 24px;
     color: white;
 }
@@ -328,7 +328,7 @@ button {
     font-size: 14px;
 }
 
-/* YOUR SONG */
+/* RECENTLY PLAYED */
 
 .played-songs-row {
     display: flex;
@@ -342,10 +342,49 @@ button {
     min-width: 70px;
 }
 
+/* /RECENTLY PLAYED */
 
-/* /YOUR SONG */
+/* YOUR SONGS */
+
+.songs-for-you-row {
+    display: flex;
+    gap: 14px;
+}
+
+.songs-for-you-item {
+    text-align: center;
+    flex-basis: calc(100% * (2/12) - 14px);
+    min-width: 70px;
+}
+
+.content-article-text {
+    color: var(--grey-text);
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+/* /YOUR SONGS */
+
+/* POPULAR ARTISTS */
+
+.popular-artists-row {
+    display: flex;
+    gap: 14px;
+}
+
+.popular-artists-item {
+    text-align: center;
+    flex-basis: calc(100% * (2/12) - 14px);
+    min-width: 70px;
+}
+
+.songs-thumb.circle {
+    border-radius: 999px;
+    aspect-ratio: 1;
+}
 
 
+/* POPULAR ARTISTS */
 
 /*** /CONTENT ***/
 
@@ -560,6 +599,14 @@ button {
     .played-songs-item {
         flex-basis: calc(100% * (3 / 12) - 42px / 4);
     }
+
+    .songs-for-you-item {
+        flex-basis: calc(100% * (3/12) - 14px);
+    }
+
+    .popular-artists-item {
+        flex-basis: calc(100% * (3/12) - 14px);
+    }
 }
 
 /*** Mediaquery /iPad ***/
@@ -599,6 +646,14 @@ button {
     }
 
     .played-songs-item {
+        flex-basis: calc(100% * (6/12) - 14px / 2);
+    }
+
+    .songs-for-you-item {
+        flex-basis: calc(100% * (6/12) - 14px / 2);
+    }
+
+    .popular-artists-item {
         flex-basis: calc(100% * (6/12) - 14px / 2);
     }
 }
@@ -737,15 +792,15 @@ button {
     border: 2px solid yellow;
 } */
 
-.debug .main-content {
+/* .debug .main-content {
     border: 2px solid red;
-}
+} */
 
-.content-row {
+/* .content-row {
     border: 2px solid white;
-}
+} */
 
-.content-col {
+/* .content-col {
     border: 3px solid green;
-}
+} */
 /************* /DEBUG RULES  ************/
