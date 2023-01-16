@@ -43,12 +43,12 @@
                             <p class="nav-item-text home-button"><a href="">Home</a></p>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item selection-off">
                             <a href=""><img class="nav-icons" src="img/search.svg" alt="home-icon"></a>
                             <p class="nav-item-text"><a href="">Cerca</a></p>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item selection-off">
                             <a href=""><img class="nav-icons" src="img/libreria.svg" alt="home-icon"></a>
                             <p class="nav-item-text"><a href="">La tua libreria</a></p>
                         </li>
@@ -62,23 +62,23 @@
 
                         <h4 class="playlists-article">Playlist</h4>
                         
-                        <div class="new-playlist">
-                            <button class="add-playlist"><i class="fa-solid fa-plus"></i></button>
-                            <p class="create-playlist">Crea Playlist</p>
+                        <div>
+                            <a class="new-playlist" href="">
+                            <i class="fa-solid fa-plus add-playlist"></i>
+                            <p class="create-playlist">Crea Playlist</p></a>
                         </div>
 
                     </div>
 
                     <ul class="my-playlist top-space">
                     
-                        <li class="name-playlist">Nome Playlist</li>
-                        <li class="name-playlist">Nome Playlist</li>
-                        <li class="name-playlist">Nome Playlist</li>
-                        <li class="name-playlist">Nome Playlist</li>
-                        <li class="name-playlist">Nome Playlist</li>
-                        <li class="name-playlist">Nome Playlist</li>
-                        <li class="name-playlist">Nome Playlist</li>
-                    
+                        <li class="name-playlist"><a href="#">Nome Playlist</a></li>
+                        <li class="name-playlist"><a href="#">Nome Playlist</a></li>
+                        <li class="name-playlist"><a href="#">Nome Playlist</a></li>
+                        <li class="name-playlist"><a href="#">Nome Playlist</a></li>
+                        <li class="name-playlist"><a href="#">Nome Playlist</a></li>
+                        <li class="name-playlist"><a href="#">Nome Playlist</a></li>
+
                     </ul>
 
                 </div>
@@ -123,8 +123,9 @@
 
                         <div class="premium-col">
 
-                            <a class="upgrade-button" href="">Effettua l'upgrade</a>
-
+                            <div class="button-large">
+                                <a class="upgrade-button" href="#">Effettua l'upgrade</a>
+                            </div>
                         </div>
 
                     </div>
@@ -143,12 +144,12 @@
 
                             <ul class="content-nav">
 
-                                <li class="content-nav-item content-nav-item-line">In evidenza</li>
-                                <li class="content-nav-item">Podcast</li>
-                                <li class="content-nav-item">Classifiche</li>
-                                <li class="content-nav-item">Generi e mood</li>
-                                <li class="content-nav-item">Nuove uscite</li>
-                                <li class="content-nav-item">Scopri</li>
+                                <li class="content-nav-item content-nav-item-line"><a href="#">In evidenza</a></li>
+                                <li class="content-nav-item"><a href="#">Podcast</a></li>
+                                <li class="content-nav-item"><a href="#">Classifiche</a></li>
+                                <li class="content-nav-item"><a href="#">Generi e mood</a></li>
+                                <li class="content-nav-item"><a href="#">Nuove uscite</a></li>
+                                <li class="content-nav-item"><a href="#">Scopri</a></li>
 
                             </ul>
 
@@ -156,191 +157,229 @@
 
                         <div class="content-col">
 
-                            <div>
+                            <div class="content-articles">
 
-                                <div class="content-articles">
+                                <h2 class="content-article-title">Recently played</h2>
 
-                                    <h2 class="content-article-title">Recently played</h2>
+                            </div>
 
-                                </div>
+                            <ul class="played-songs-row">
 
-                                <ul class="played-songs-row">
+                                <li class="played-songs-item">
 
-                                    <li class="played-songs-item">
+                                    <div>
 
-                                        <figure>
-
+                                        <figure class="play-it">
                                             <img class="songs-thumb" src="img/metal_lifting.jpg" alt="metal">
-
-                                            <h3 class="songs-title">Heavy Metal</h3>
-                                            
-                                            <p class="songs-subtitle">Subtitle</p>
-
+                                            <div class="press-to-play">
+                                                <p class="press-to-play-icon"><i class="fa-regular fa-circle-play"></i></p>
+                                            </div>
                                         </figure>
 
-                                    </li>
+                                        <h3 class="songs-title">Heavy Metal</h3>
+                                        
+                                        <p class="songs-subtitle">Subtitle</p>
 
-                                    <li class="played-songs-item">
+                                    </div>
+
+                                </li>
+
+                                <li class="played-songs-item">
+                                
+                                    <div>
                                     
-                                        <figure>
-                                    
+                                        <figure class="play-it">
                                             <img class="songs-thumb" src="img/stranger.jpeg" alt="stranger-things">
-                                    
-                                            <h3 class="songs-title">Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h3>
-                                    
-                                            <p class="songs-subtitle">Kyle Dixon & Michael Stein</p>
-                                    
+                                            <div class="press-to-play">
+                                                <p class="press-to-play-icon"><i class="fa-regular fa-circle-play"></i></p>
+                                            </div>
                                         </figure>
                                     
-                                    </li>
+                                        <h3 class="songs-title">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                    
+                                        <p class="songs-subtitle">Kyle Dixon & Michael Stein</p>
+                                    
+                                    </div>
+                                
+                                </li>
 
-                                    <li class="played-songs-item">
+                                <li class="played-songs-item">
+                                
+                                    <div>
                                     
-                                        <figure>
-                                    
-                                            <img class="songs-thumb" src="img/aquietplace.jpeg" alt="aquietplace">
-                                    
-                                            <h3 class="songs-title">A quiet place</h3>
-                                    
-                                            <p class="songs-subtitle">Subtitle</p>
-                                    
+                                        <figure class="play-it">
+                                            <img class="songs-thumb" src="img/aquietplace.jpeg" alt="a quiet place">
+                                            <div class="press-to-play">
+                                                <p class="press-to-play-icon"><i class="fa-regular fa-circle-play"></i></p>
+                                            </div>
                                         </figure>
                                     
-                                    </li>
+                                        <h3 class="songs-title">A quiet place</h3>
+                                    
+                                        <p class="songs-subtitle">Subtitle</p>
+                                    
+                                    </div>
+                                
+                                </li>
 
-                                    <li class="played-songs-item">
+                                <li class="played-songs-item">
+                                
+                                    <div>
                                     
-                                        <figure>
-                                    
-                                            <img class="songs-thumb" src="img/split.jpeg" alt="split">
-                                    
-                                            <h3 class="songs-title">Split</h3>
-                                    
-                                            <p class="songs-subtitle">Subtitle</p>
-                                    
+                                        <figure class="play-it">
+                                            <img class="songs-thumb" src="img/split.jpeg" alt="split-film">
+                                            <div class="press-to-play">
+                                                <p class="press-to-play-icon"><i class="fa-regular fa-circle-play"></i></p>
+                                            </div>
                                         </figure>
                                     
-                                    </li>
+                                        <h3 class="songs-title">Split</h3>
+                                    
+                                        <p class="songs-subtitle">Subtitle</p>
+                                    
+                                    </div>
+                                
+                                </li>
 
-                                    <li class="played-songs-item">
+                                <li class="played-songs-item">
+                                
+                                    <div>
                                     
-                                        <figure>
-                                    
+                                        <figure class="play-it">
                                             <img class="songs-thumb" src="img/cure.jpeg" alt="cure for wellness">
-                                    
-                                            <h3 class="songs-title">A cure for wellness</h3>
-                                    
-                                            <p class="songs-subtitle">Subtitle</p>
-                                    
+                                            <div class="press-to-play">
+                                                <p class="press-to-play-icon"><i class="fa-regular fa-circle-play"></i></p>
+                                            </div>
                                         </figure>
                                     
-                                    </li>
+                                        <h3 class="songs-title">A cure for wellness</h3>
+                                    
+                                        <p class="songs-subtitle">Subtitle</p>
+                                    
+                                    </div>
+                                
+                                </li>
 
-                                    <li class="played-songs-item">
+                                <li class="played-songs-item">
+                                
+                                    <div>
                                     
-                                        <figure>
-                                    
-                                            <img class="songs-thumb" src="img/sinister.jpeg" alt="Sinister">
-                                    
-                                            <h3 class="songs-title">Sinister</h3>
-                                    
-                                            <p class="songs-subtitle">Subtitle</p>
-                                    
+                                        <figure class="play-it">
+                                            <img class="songs-thumb" src="img/sinister.jpeg" alt="sinister">
+                                            <div class="press-to-play">
+                                                <p class="press-to-play-icon"><i class="fa-regular fa-circle-play"></i></p>
+                                            </div>
                                         </figure>
                                     
-                                    </li>
+                                        <h3 class="songs-title">Sinister</h3>
+                                    
+                                        <p class="songs-subtitle">Subtitle</p>
+                                    
+                                    </div>
+                                
+                                </li>
 
-                                </ul>
-
-                            </div>
+                            </ul>
 
                         </div>
 
                         <div class="content-col">
 
-                            <div>
+                            <div class="content-articles">
+                            
+                                <h2 class="content-article-title">Creato per John Doe</h2>
 
-                                <div class="content-articles">
-                                
-                                    <h2 class="content-article-title">Creato per John Doe</h2>
-
-                                    <p class="content-article-text">Pi&uacute; ascolti, pi&uacute; accurati saranno i suggeriti.</p>
-                                
-                                </div>
-
-                                <ul class="songs-for-you-row">
-
-                                    <li class="songs-for-you-item">
-
-                                        <figure>
-
-                                            <img class="songs-thumb" src="img/radar.jpeg" alt="metal">
-
-                                            <h3 class="songs-title">Daily Mix 1</h3>
-
-                                        </figure>
-
-                                    </li>
-
-                                    <li class="songs-for-you-item">
-
-                                        <figure>
-
-                                            <img class="songs-thumb" src="img/mixdaily.jpeg" alt="stranger-things">
-
-                                            <h3 class="songs-title">Release Radar</h3>
-
-                                        </figure>
-
-                                    </li>
-
-                                </ul>
-
+                                <p class="content-article-text">Pi&uacute; ascolti, pi&uacute; accurati saranno i suggeriti.</p>
+                            
                             </div>
+
+                            <ul class="songs-for-you-row">
+
+                                <li class="songs-for-you-item">
+
+                                    <div>
+                                    
+                                        <figure class="play-it">
+                                            <img class="songs-thumb" src="img/mixdaily.jpeg" alt="mix-img-spotify">
+                                            <div class="press-to-play">
+                                                <p class="press-to-play-icon"><i class="fa-regular fa-circle-play"></i></p>
+                                            </div>
+                                        </figure>
+                                    
+                                        <h3 class="songs-title">Daily Mix 1</h3>
+                                    
+                                    </div>
+
+                                </li>
+
+                                <li class="songs-for-you-item">
+
+                                    <div>
+                                    
+                                        <figure class="play-it">
+                                            <img class="songs-thumb" src="img/radar.jpeg" alt="radar-img-spotify">
+                                            <div class="press-to-play">
+                                                <p class="press-to-play-icon"><i class="fa-regular fa-circle-play"></i></p>
+                                            </div>
+                                        </figure>
+                                    
+                                        <h3 class="songs-title">Release Radar</h3>
+                                    
+                                    </div>
+
+                                </li>
+
+                            </ul>
 
                         </div>
 
                         <div class="content-col">
 
-                            <div>
-                            
-                                <div class="content-articles">
-                            
-                                    <h2 class="content-article-title">Artisti pi&uacute; popolari</h2>
-                            
-                                    <p class="content-article-text">Pi&uacute; ascolti, pi&uacute; accurati saranno i suggeriti.</p>
-                            
-                                </div>
-                            
-                                <ul class="popular-artists-row">
+                            <div class="content-articles">
+                        
+                                <h2 class="content-article-title">Artisti pi&uacute; popolari</h2>
+                        
+                                <p class="content-article-text">Pi&uacute; ascolti, pi&uacute; accurati saranno i suggeriti.</p>
+                        
+                            </div>
+                        
+                            <ul class="popular-artists-row">
                             
                                     <li class="popular-artists-item">
                             
-                                        <figure>
-                            
-                                            <img class="songs-thumb circle" src="img/youg.jpeg" alt="metal">
-                            
+                                        <div>
+                                        
+                                            <figure class="play-it">
+                                                <img class="songs-thumb circle" src="img/youg.jpeg" alt="youg-track">
+                                                <div class="press-to-play">
+                                                    <p class="press-to-play-icon"><i class="fa-regular fa-circle-play"></i></p>
+                                                </div>
+                                            </figure>
+                                        
                                             <h3 class="songs-title">Lana del Rey</h3>
-                            
-                                        </figure>
+                                        
+                                        </div>
                             
                                     </li>
                             
                                     <li class="popular-artists-item">
                             
-                                        <figure>
-                            
-                                            <img class="songs-thumb circle" src="img/einaudi.jpeg" alt="stranger-things">
-                            
+                                        <div>
+                                        
+                                            <figure class="play-it">
+                                                <img class="songs-thumb circle" src="img/einaudi.jpeg" alt="ludovico-einaudi">
+                                                <div class="press-to-play">
+                                                    <p class="press-to-play-icon"><i class="fa-regular fa-circle-play"></i></p>
+                                                </div>
+                                            </figure>
+                                        
                                             <h3 class="songs-title">Ludovico Einaudi</h3>
-                            
-                                        </figure>
+                                        
+                                        </div>
                             
                                     </li>
                             
-                                </ul>
-                            
-                            </div>
+                            </ul>
 
                         </div>
 
@@ -366,7 +405,7 @@
 
                 <!------- PLAYER-SONG ------->
 
-                <div class="player-col-static-first">
+                <div class="player-col-first">
 
 
                     <div class="player-song-row">
@@ -402,13 +441,13 @@
 
                                 <div class="favourite-col">
 
-                                    <button class="button-no-bg"><i class="fa-regular fa-heart"></i></button>
+                                    <button class="button-no-bg"><a href="#"><i class="fa-regular fa-heart"></i></a></button>
 
                                 </div>
 
                                 <div class="favourite-col">
                                 
-                                    <button class="button-no-bg"><i class="fa-regular fa-folder"></i></button>
+                                    <button class="button-no-bg"><a href="#"><i class="fa-regular fa-folder"></i></a></button>
 
                                 </div>
 
@@ -424,7 +463,7 @@
 
                 <!------- PLAYER-INTERACTIONS ------->
 
-                <div class="player-col-elastic">
+                <div class="player-col">
 
                     <div class="main-player-row">
 
@@ -465,9 +504,13 @@
                                 </div>
 
                                 <div class="col-player-items bar">
+
                                     <div class="player-full-time">
-                                        <div class="player-actual-time"></div>
+                                        <div class="player-actual-time">
+                                            <div class="player-time-passed"></div>
+                                        </div>
                                     </div>
+                                    
                                 </div>
 
                                 <div class="col-player-items">
@@ -486,7 +529,7 @@
 
                 <!------- PLAYER-FEATURES ------->
 
-                <div class="player-col-static-third">
+                <div class="player-col-third">
 
                     <div class="features-row">
 
@@ -505,7 +548,9 @@
                         <div class="features-col-volume">
 
                             <div class="features-col-volume-bar">
-                                <div class="item-volume"></div>
+                                <div class="item-volume">
+                                    <div class="volume-circle"></div>
+                                </div>
                             </div>
                             
                         </div>
