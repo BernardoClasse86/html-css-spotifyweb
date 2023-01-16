@@ -162,6 +162,14 @@ button {
     align-items: center;
 }
 
+.new-playlist:hover .add-playlist {
+    background-color: white;
+}
+
+.new-playlist:hover .create-playlist {
+    color: white;
+}
+
 .add-playlist {
     font-size: 20px;
     padding: 8px 12px;
@@ -170,17 +178,9 @@ button {
     color: black;
 }
 
-.add-playlist:hover {
-    background-color: white;
-}
-
 .create-playlist {
     font-size: 14px;
     font-weight: bold;
-}
-
-.create-playlist:hover {
-    color: white;
 }
 
 .my-playlist {
@@ -585,6 +585,14 @@ button {
     border-radius: 999px;
 }
 
+.player-full-time:hover .player-actual-time {
+    background-color: var(--green-selection);
+}
+
+.player-full-time:hover .player-time-passed {
+    opacity: 1;
+}
+
 .player-actual-time {
     height: 4px;
     width: 20%;
@@ -596,20 +604,12 @@ button {
     flex-direction: row-reverse;
 }
 
-.player-actual-time:hover {
-    background-color: var(--green-selection);
-}
-
 .player-time-passed {
     width: 12px;
     height: 12px;
     background-color: white;
     border-radius: 999px;
     opacity: 0;
-}
-
-.player-time-passed:hover {
-    opacity: 1;
 }
 
 .time-item {
@@ -646,6 +646,14 @@ button {
     display: flex;
 }
 
+.features-col-volume-bar:hover .item-volume {
+    background-color: var(--green-selection);
+}
+
+.features-col-volume-bar:hover .volume-circle {
+    opacity: 1;
+}
+
 .item-volume {
     height: 4px;
     width: 28%;
@@ -657,20 +665,12 @@ button {
     flex-direction: row-reverse;
 }
 
-.item-volume:hover {
-    background-color: var(--green-selection);
-}
-
 .volume-circle {
     width: 12px;
     height: 12px;
     background-color: white;
     border-radius: 999px;
     opacity: 0;
-}
-
-.volume-circle:hover {
-    opacity: 1;
 }
 
 /********* /PLAYER  ********/
