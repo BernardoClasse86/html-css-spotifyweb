@@ -123,7 +123,7 @@ button {
 }
 
 .nav-item.selection-off {
-    border-left: 3px solid var(--bg-sidebar);
+    border-left: 3px solid transparent;
 }
 
 .nav-item.selection-off:hover {
@@ -131,10 +131,15 @@ button {
     color: white;
 }
 
+.nav-item:hover .nav-icons {
+    opacity: 1;
+}
+
 .nav-icons {
     width: 20px;
     aspect-ratio: 1;
     margin-right: 8px;
+    opacity: 0.7;
 }
 
 .nav-item-text {
@@ -375,9 +380,10 @@ button {
 .press-to-play-icon {
     font-size: 40px;
     color: white;
+    cursor: pointer;
 }
 
-.play-it:hover .songs-thumb {
+.play-it:hover .songs-album {
     opacity: 0.5;
 }
 
@@ -385,16 +391,22 @@ button {
     opacity: 1;
 }
 
+.songs-album {
+    cursor: pointer;
+}
+
 .songs-title {
     color: white;
     font-size: 16px;
     margin-bottom: 14px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .songs-subtitle {
     color: var(--grey-text);
     font-size: 14px;
+    cursor: pointer;
 }
 
 /* /RECENTLY PLAYED */
@@ -432,18 +444,18 @@ button {
     flex-basis: calc(100% * (2/12) - 14px);
 }
 
-.songs-thumb.circle {
+.songs-album.circle {
     border-radius: 999px;
     aspect-ratio: 1;
 }
 
-/* POPULAR ARTISTS */
+/* /POPULAR ARTISTS */
 
 /*** /CONTENT ***/
 
 /****** /MAIN - CONTENT ******/
 
-/************ MAIN-AREA  ************/
+/************ /MAIN-AREA  ************/
 
 /********* PLAYER  ********/
 
@@ -548,7 +560,6 @@ button {
 
 .player-buttons-row {
     display: flex;
-    gap: 20px;
     color: white;
     justify-content: center;
     align-items: center;
@@ -567,6 +578,10 @@ button {
     font-size: 18px;
 }
 
+.buttons-click {
+    padding: 0 10px;
+}
+
 .play-buttons.button-start {
     font-size: 32px;
 }
@@ -583,6 +598,7 @@ button {
     background-color: var(--empty-line);
     border: 0px solid transparent;
     border-radius: 999px;
+    cursor: pointer;
 }
 
 .player-full-time:hover .player-actual-time {
@@ -644,6 +660,7 @@ button {
     border: 0px solid transparent;
     border-radius: 999px;
     display: flex;
+    cursor: pointer;
 }
 
 .features-col-volume-bar:hover .item-volume {
@@ -747,6 +764,10 @@ button {
 
     .features-row {
         gap: 12px;
+    }
+
+    .buttons-click {
+        padding: 0 6px;
     }
 
     .played-songs-item {
@@ -867,7 +888,15 @@ button {
         font-size: 10px;
     }
 
+    .nav-item.selection-off {
+        border-left: 0;
+    }
+
+    .nav-item.selection-off:hover {
+        border-left: 0;
+    }
 }
+
 
 /*** /Mediaquery Mobile ***/
 
